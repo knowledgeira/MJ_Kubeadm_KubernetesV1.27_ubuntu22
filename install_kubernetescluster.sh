@@ -32,7 +32,7 @@ if ! command -v vagrant &> /dev/null; then
     sudo apt update
     sudo apt install vagrant -y
 else
-    echo -e "STEP \n\n${GREEN} STEP 3 :You already have Vagrant installed. Moving forward.${NC}"
+    echo -e "\n\n${GREEN} STEP 3 :You already have Vagrant installed. Moving forward.${NC}"
     echo "------------------------------------------------"
 
 fi
