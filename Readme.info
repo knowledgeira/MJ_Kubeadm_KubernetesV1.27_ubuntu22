@@ -26,3 +26,8 @@ vagrant@k8sMaster:~$ kubectl get nodes -o wide
 k8smaster    Ready    control-plane   5m31s   v1.27.3   192.168.57.8    <none>        Ubuntu 22.04.2 LTS   5.15.0-67-generic   containerd://1.6.21
 k8sworker1   Ready    <none>          3m39s   v1.27.3   192.168.57.9    <none>        Ubuntu 22.04.2 LTS   5.15.0-67-generic   containerd://1.6.21
 k8sworker2   Ready    <none>          111s    v1.27.3   192.168.57.10   <none>        Ubuntu 22.04.2 LTS   5.15.0-67-generic   containerd://1.6.21
+
+
+
+
+Post reboot go the directory where there is Vagrant file and do vagrant up
