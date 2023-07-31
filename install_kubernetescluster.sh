@@ -5,7 +5,7 @@ GREEN='\033[0;32m'
 NC='\033[0m' # No Color
 
 if lscpu | grep -E 'CPU\(s\)|Thread|Core' &>/dev/null; then
-    echo -e "STEP 1 :" ${BLUE}CPU, Thread, and Core information:${NC}\n\n"
+    echo -e "STEP 1 : ${BLUE}CPU, Thread, and Core information:${NC}"
     echo "------------------------------------------------"
 
     lscpu | grep -E 'CPU\(s\)|Thread|Core'
@@ -16,11 +16,11 @@ else
 fi
 
 if lscpu | grep -i -E 'svm|vmx' &>/dev/null; then
-    echo -e "STEP 2 : \n\n${GREEN}Virtualization Status : It is enabled.${NC}\n\n"
+    echo -e "STEP 2 : \n\n${GREEN}Virtualization Status : It is enabled.${NC}"
     echo "------------------------------------------------"
 
 else
-    echo -e "STEP 2 : ${GREEN}Virtualization Status: Not enabled.${NC}\n\n"
+    echo -e "STEP 2 : ${GREEN}Virtualization Status: Not enabled.${NC}"
     echo "------------------------------------------------"
 
 fi
