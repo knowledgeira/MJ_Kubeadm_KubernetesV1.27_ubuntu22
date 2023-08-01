@@ -4,7 +4,7 @@ BLUE='\033[0;34m'
 GREEN='\033[0;32m'
 NC='\033[0m' # No Color
 clear
-if lscpu | grep -E 'CPU\(s\)|Thread|Core' &>/dev/null; then
+if lscpu | grep -E 'CPU\(s\)|Thread|Core|Virtualization' &>/dev/null; then
     echo -e "\n\nSTEP 1 : ${BLUE}CPU, Thread, and Core information:${NC}"
     echo "------------------------------------------------"
 
