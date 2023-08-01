@@ -8,7 +8,7 @@ if lscpu | grep -E 'CPU\(s\)|Thread|Core|Virtualization' &>/dev/null; then
     echo -e "\n\nSTEP 1 : ${BLUE}CPU, Thread, and Core information:${NC}"
     echo "------------------------------------------------"
 
-    lscpu | grep -E 'CPU\(s\)|Thread|Core'
+    lscpu | grep -E 'CPU\(s\)|Thread|Core|Virtualization'
 else
     echo -e "${BLUE}Unable to get CPU, Thread, and Core information.${NC}"
     echo "------------------------------------------------"
