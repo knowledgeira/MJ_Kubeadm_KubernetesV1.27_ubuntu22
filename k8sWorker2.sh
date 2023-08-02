@@ -16,8 +16,8 @@ sudo mkdir /etc/apt/keyrings
 #Add the Kubernetes apt repository:
 
 
-echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
-curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+sudo echo "deb https://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
+sudo curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
 
 
 #Update apt package index, install kubelet, kubeadm and kubectl, and pin their version:
