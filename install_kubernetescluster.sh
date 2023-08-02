@@ -6,9 +6,9 @@ clear
 
 secure_boot_status=$(sudo mokutil --sb-state)
 if [[ $secure_boot_status == "SecureBoot enabled" ]]; then
-    echo -e "${BLUE}Secure boot: enabled . You need to disbale secure boot from bios\n\n.${NC}"
+    echo -e "\n\n${GREEN}Secure boot: enabled . You need to disbale secure boot from bios\n\n.${NC}"
 else
-    echo -e "${BLUE}Secure boot: disabled.\n\n.${NC}"
+    echo -e "\n\n${GREEN}Secure boot: disabled.\n\n.${NC}"
 fi
 
 if lscpu | grep -E 'CPU\(s\)|Thread|Core|Virtualization' &>/dev/null; then
