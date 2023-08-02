@@ -1,4 +1,11 @@
 #!/usr/bin/bash
+secure_boot_status=$(sudo mokutil --sb-state)
+if [[ $secure_boot_status == "SecureBoot enabled" ]]; then
+    echo "Secure boot: enabled . You need to disbale secure boot from bios."
+else
+    echo "Secure boot: disabled ."
+fi
+
 
 BLUE='\033[0;34m'
 GREEN='\033[0;32m'
