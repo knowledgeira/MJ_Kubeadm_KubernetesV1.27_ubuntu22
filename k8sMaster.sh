@@ -77,8 +77,8 @@ mkdir -p /home/vagrant/.kube
 sudo mkdir -p /root/.kube
 sudo chmod 777 /etc/kubernetes/admin.conf 
 
-cp -i /etc/kubernetes/admin.conf /home/vagrant/.kube/config
-sudo cp -i /etc/kubernetes/admin.conf /root/.kube/config
+sudo cp  /etc/kubernetes/admin.conf /home/vagrant/.kube/config
+sudo cp  /etc/kubernetes/admin.conf /root/.kube/config
 #sudo chown $(id -u):$(id -g) $HOME/.kube/config
 echo "Adding hostname and IP address mapping to /etc/hosts file..."
 echo "192.168.57.8 k8sMaster" | sudo tee -a /etc/hosts > /dev/null
