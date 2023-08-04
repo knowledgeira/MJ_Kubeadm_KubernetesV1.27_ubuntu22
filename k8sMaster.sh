@@ -90,7 +90,8 @@ sha_token="$(openssl x509 -pubkey -in /etc/kubernetes/pki/ca.crt | openssl rsa -
 token="$(kubeadm token list | awk '{print $1}' | sed -n '2 p')"
 
 #echo "kubeadm join $master_ip:6443 --token=$token --discovery-token-ca-cert-hash sha256:$sha_token"
-
+sudo wget https://github.com/containerd/nerdctl/releases/download/v0.19.0/nerdctl-0.19.0-linux-amd64.tar.gz
+sudo tar Cxzvf /usr/local/bin nerdctl-0.19.0-linux-amd64.tar.gz
 
 #sudo wget  https://github.com/flannel-io/flannel/releases/latest/download/kube-flannel.yml
 sudo wget https://github.com/flannel-io/flannel/releases/download/v0.22.1/kube-flannel.yml
