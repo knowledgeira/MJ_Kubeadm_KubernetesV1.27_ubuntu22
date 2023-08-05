@@ -67,3 +67,4 @@ echo -e "Step 6: \n\n${BLUE}Deploying Kubernetes cluster${NC}"
 echo "------------------------------------------------"
 sleep 30
 vagrant up
+vagrant status
