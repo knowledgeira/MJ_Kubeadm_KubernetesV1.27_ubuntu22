@@ -4,6 +4,12 @@ GREEN='\033[0;32m'
 NC='\033[0m' # No Color
 clear
 
+if ! command -v mokutil &>/dev/null; then
+    echo -e "Mokutil is not installed. Installing mokutil..."
+    sudo apt update
+    sudo apt install -y mokutil
+fi
+
 secure_boot_status=$(sudo mokutil --sb-state)
 if [[ $secure_boot_status == "SecureBoot enabled" ]]; then
     echo -e "\n\nSTEP 1 :${GREEN}Secure boot: enabled . You need to disbale secure boot from bios\n\n.${NC}"
