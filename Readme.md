@@ -1,7 +1,12 @@
-1. sudo chmod +x ./install_kubernetescluster.sh && time ./install_kubernetescluster.sh
-2. This install's kubernetes cluster with the help of kubeadm on DIstro ubuntu 22/20/18.
+Become ROOT and run following command 
+1.if ! command -v git &>/dev/null; then sudo apt-get update && sudo apt-get install -y git; fi && git clone https://github.com/knowledgeira/MJ_Kubeadm_KubernetesV1.24_ubuntu22.git && cd MJ_Kubeadm_KubernetesV1.24_ubuntu22/ && sudo chmod +x ./install_kubernetescluster.sh && time ./install_kubernetescluster.sh
+
+2. This install's kubernetes cluster with the help of kubeadm on Ubuntu (Debian based systems)..tested on Ubuntu 18/20/22 version.
+
 3. 1 Master Node and 2 worker nodes -->vagrant machines are created with 1 gb RAM and 1 VCPU.
+
 4.  You can modify vagrant files and increase CPU and RAM as per your need.
+
 5. Follow below commands to get the access Cluster
 
 
