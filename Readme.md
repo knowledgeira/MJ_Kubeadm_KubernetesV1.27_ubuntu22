@@ -1,5 +1,8 @@
-Become ROOT and run following command 
-1.if ! command -v git &>/dev/null; then sudo apt-get update && sudo apt-get install -y git; fi && git clone https://github.com/knowledgeira/MJ_Kubeadm_KubernetesV1.24_ubuntu22.git && cd MJ_Kubeadm_KubernetesV1.24_ubuntu22/ && sudo chmod +x ./install_kubernetescluster.sh && time ./install_kubernetescluster.sh
+
+Run following command to install Kubernetes Cluster in few minutes.
+
+1. sudo apt-get update && sudo apt-get install -y git && sudo apt-get install -y mokutil && rm -rf MJ_Kubeadm_KubernetesV1.24_ubuntu22 && git clone https://github.com/knowledgeira/MJ_Kubeadm_KubernetesV1.24_ubuntu22.git && cd MJ_Kubeadm_KubernetesV1.24_ubuntu22 && sudo chmod +x ./install_kubernetescluster.sh && time ./install_kubernetescluster.sh
+
 
 2. This install's kubernetes cluster with the help of kubeadm on Ubuntu (Debian based systems)..tested on Ubuntu 18/20/22 version.
 
