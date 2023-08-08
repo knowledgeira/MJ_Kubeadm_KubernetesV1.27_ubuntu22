@@ -45,7 +45,10 @@ net.ipv4.ip_forward                 = 1
 EOF
 
 # Apply sysctl params without reboot
-sudo sysctl --system
+#sudo sysctl --system
+sudo systemctl restart systemd-sysctl
+
+
 
 echo "Verifying Data"
 lsmod | grep br_netfilter
