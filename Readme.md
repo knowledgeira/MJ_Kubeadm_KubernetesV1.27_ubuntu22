@@ -21,7 +21,7 @@ k8sWorker1                running (virtualbox)
 k8sWorker2                running (virtualbox)
 
 
-student@Grayskull:~/MJ_Kubeadm_KubernetesV1.24_ubuntu22-mj$ vagrant ssh k8sMaster
+student@Grayskull:~/MJ_Kubeadm_KubernetesV1.27_ubuntu22-mj$ vagrant ssh k8sMaster
 Welcome to Ubuntu 22.04.2 LTS (GNU/Linux 5.15.0-67-generic x86_64)
 
 This system is built by the Bento project by Chef Software
