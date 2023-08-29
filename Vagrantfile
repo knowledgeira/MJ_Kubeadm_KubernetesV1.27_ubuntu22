@@ -6,8 +6,8 @@ Vagrant.configure("2") do |config|
    # k8sMaster.vm.network "forwarded_port", guest: 6443, host: 6443
 
     k8sMaster.vm.provider "virtualbox" do |vb|
-      vb.memory = "1024"
-      vb.cpus = "1"
+      vb.memory = "2048"
+      vb.cpus = "2"
     end
 
     k8sMaster.vm.provision "shell", path: "k8sMaster.sh"
@@ -19,8 +19,8 @@ Vagrant.configure("2") do |config|
     k8sWorker1.vm.hostname = "k8sWorker1"
 
     k8sWorker1.vm.provider "virtualbox" do |vb|
-      vb.memory = "1024"
-      vb.cpus = "1"
+      vb.memory = "2048"
+      vb.cpus = "2"
     end
 
     k8sWorker1.vm.provision "shell", path: "k8sWorker1.sh"
@@ -32,8 +32,8 @@ Vagrant.configure("2") do |config|
     k8sWorker2.vm.hostname = "k8sWorker2"
 
    k8sWorker2.vm.provider "virtualbox" do |vb|
-      vb.memory = "1024"
-      vb.cpus = "1"
+      vb.memory = "2048"
+      vb.cpus = "2"
     end
 
     k8sWorker2.vm.provision "shell", path: "k8sWorker2.sh"
