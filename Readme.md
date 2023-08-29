@@ -1,9 +1,9 @@
 
- sudo apt-get update && sudo apt-get install -y git && sudo apt-get install -y mokutil && rm -rf MJ_Kubeadm_KubernetesV1.24_ubuntu22 && git clone https://github.com/knowledgeira/MJ_Kubeadm_KubernetesV1.24_ubuntu22.git && cd MJ_Kubeadm_KubernetesV1.24_ubuntu22 && sudo chmod +x ./install_kubernetescluster.sh && time ./install_kubernetescluster.sh
+ sudo apt-get update && sudo apt-get install -y git && sudo apt-get install -y mokutil && rm -rf MJ_Kubeadm_KubernetesV1.27_ubuntu22 && git clone https://github.com/knowledgeira/MJ_Kubeadm_KubernetesV1.27_ubuntu22.git && cd MJ_Kubeadm_KubernetesV1.27_ubuntu22 && sudo chmod +x ./install_kubernetescluster.sh && time ./install_kubernetescluster.sh
 
 1.Pre-requisite is to disable secure boot and enable Virtualisation post  that run above command. 
 
-2. This install's kubernetes cluster with the help of kubeadm on Ubuntu (Debian based systems)..tested on Ubuntu 18/20/22 version.
+2. This install's kubernetes cluster with the help of kubeadm on Ubuntu (Debian based systems)..tested on Ubuntu 18/20/22/23 version.
 
 3. 1 Master Node and 2 worker nodes -->vagrant machines are created with 1 gb RAM and 1 VCPU.
 
@@ -13,7 +13,7 @@
 
 
 
-student@Grayskull:~/MJ_Kubeadm_KubernetesV1.24_ubuntu22-mj$ vagrant status
+student@Grayskull:~/MJ_Kubeadm_KubernetesV1.27_ubuntu22-mj$ vagrant status
 
 
 k8sMaster                 running (virtualbox)
